@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Working with AI &middot; Jack Cook</title>
+<meta name="description" content="How Jack Cook builds with AI, works with it, and thinks about deploying it: products, workflows, and judgment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-inner">
+    <a class="brand" href="index.html">Jack Cook</a>
+    <nav class="main" aria-label="Main">
+      <a href="index.html">About</a>
+      <a href="building.html">Building</a>
+      <a href="analysis.html">Analysis</a>
+      <a href="ai.html" aria-current="page">Working with AI</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section>
+      <p class="eyebrow">Working with AI</p>
+      <h1>AI assembles. I decide.</h1>
+      <p class="lede">Everyone's resume says "AI tools" now. Here is what that actually means in my work, at three levels: building products with it, running real workflows on it, and knowing where it breaks.</p>
+    </section>
+
+    <section class="project">
+      <div class="body">
+        <h2>1. Building products on it</h2>
+        <p>Pest OS is an AI product with paying customers, not a demo. Voice agents answer real inbound calls for real operators: 97 calls handled in our first customer's first month, six jobs booked to calendar without a human touching the phone. Building it meant learning what production AI requires that prototypes don't: spam screening, graceful escalation to a human, and owning the failure when the agent mishandles a call. Full story on the <a href="building.html">Building page</a>.</p>
+      </div>
+      <dl class="facts">
+        <dt>Stack</dt><dd>Claude API, Retell, ElevenLabs, custom agentic workflows</dd>
+        <dt>Proof</dt><dd>$6K ARR, live since January 2026</dd>
+      </dl>
+    </section>
+
+    <section class="project">
+      <div class="body">
+        <h2>2. Running real workflows on it</h2>
+        <p>At GHC Partners I built an outreach pipeline that parsed family office PDFs, scored fund fit, and drafted personalized emails at scale, with human approval gating every send. The design principle: automate drafting, never judgment.</p>
+        <h3>The part most people skip: verification</h3>
+        <p>Midway through one build, the personalization script was producing clean, confident, single-sentence intros. I asked a simple question: are these actually correct? They weren't. The model had been inventing investment focus areas that sounded plausible but weren't in the source documents. So I scrapped the automated focus lines and manually verified all 87 companies against their source PDFs, in batches, until every claim traced to a document. Final count: 28 companies with verifiable focus areas, 59 left deliberately blank, and a do-not-contact list flagged in the CRM.</p>
+        <p>That instinct, that fluent output is not the same as correct output, is the most useful thing I know about AI.</p>
+      </div>
+      <dl class="facts">
+        <dt>Scale</dt><dd>~700 contacts, ~300 source PDFs</dd>
+        <dt>Catch</dt><dd>Hallucinated focus areas, caught by manual audit</dd>
+        <dt>Fix</dt><dd>87 companies verified by hand against sources</dd>
+      </dl>
+    </section>
+
+    <section class="project">
+      <div class="body">
+        <h2>3. Knowing where it pays, and where it doesn't</h2>
+        <p>In a timed three-hour case for an enterprise AI company, I scoped agent deployments for two Fortune 500 workflows: distributor pricing exceptions at an industrial manufacturer, and SKU substitution at a food distributor. The exercise was less about AI and more about deployment judgment: sizing the revenue at risk (with assumptions stated and the data requests to replace them), mapping where the human stays in the loop, picking the wedge use case by adoption friction rather than by ceiling, and scoping a 90-day pilot with explicit "not attempted" lines like no ERP writes and no auto-approvals.</p>
+        <p>The lesson generalizes: the constraint on enterprise AI is rarely the model. It's data readiness, trust, and whether the people in the workflow want the thing to succeed.</p>
+        <h3>And in my own analysis</h3>
+        <p>Claude helped me write and debug the code that processed 23,470 SEC filings for my <a href="analysis.html">Econ 66 paper</a>, and helped draft visualizations for the <a href="analysis.html#callaway">Callaway deck</a>, which disclosed its AI usage specifically in the appendix. The filtering logic, the regressions, the strategic recommendations, and the writing voice are mine. That division of labor is the whole point.</p>
+      </div>
+      <dl class="facts">
+        <dt>Format</dt><dd>3-hour timed case, enterprise AI deployment</dd>
+        <dt>Approach</dt><dd>Wedge selection by adoption friction, human-in-the-loop by design</dd>
+        <dt>Disclosure</dt><dd>AI use disclosed specifically, every time</dd>
+      </dl>
+    </section>
+
+    <p class="next"><a href="resume.html">Next: resume &rarr;</a></p>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="foot-inner">
+    <span>Jack Cook &middot; Hanover, NH &rarr; New York, NY</span>
+    <span><a href="mailto:jack.w.cook.26@dartmouth.edu">jack.w.cook.26@dartmouth.edu</a> &middot; <a href="https://www.linkedin.com/in/jack-w-cook">LinkedIn</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

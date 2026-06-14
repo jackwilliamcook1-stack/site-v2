@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analysis &middot; Jack Cook</title>
+<meta name="description" content="Original empirical research on VC check sizes, an activist-investor strategy case on Callaway Golf, and live market research for a venture fund.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-inner">
+    <a class="brand" href="index.html">Jack Cook</a>
+    <nav class="main" aria-label="Main">
+      <a href="index.html">About</a>
+      <a href="building.html">Building</a>
+      <a href="analysis.html" aria-current="page">Analysis</a>
+      <a href="ai.html">Working with AI</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section>
+      <p class="eyebrow">Analysis</p>
+      <h1>Research and strategy work, with the documents to back it up.</h1>
+    </section>
+
+    <section class="project" id="econ66">
+      <div class="body">
+        <h2>How smart is smart money?</h2>
+        <p class="muted small">VC check sizes as a predictor of economic policy uncertainty &middot; ECON 66: Theory of Finance, Dartmouth, March 2025</p>
+        <p>The question: do VC check sizes lead Economic Policy Uncertainty? In other words, do VCs actually have better information than the market? The honest answer turned out to be no, and getting to that answer was the interesting part.</p>
+
+        <h3>The data didn't exist, so I built it</h3>
+        <p>There is no clean public database of VC check sizes. I downloaded raw SEC Form D filings and wrote Python code to filter for deals structurally consistent with VC equity investment: US-based, $100K to $100M, equity-only, operating companies, original filings. The result was 23,470 deals across 17 industries and 196 months, deflated to real dollars.</p>
+
+        <h3>The result that disappeared</h3>
+        <p>In a bivariate regression, falling check sizes predicted rising EPU (coefficient &minus;0.105, p &lt; 0.05). Promising. Then I added standard financial and macro controls: VIX, credit spreads, term spread, S&amp;P returns, unemployment, sentiment, LEI growth, IPO activity. The coefficient went insignificant (p = 0.51), and Granger causality tests found nothing in either direction. The apparent signal was just common macro dynamics. VCs read the same public signals everyone else does. This held across four horizons, three subsamples, nonlinear specifications, and alternative uncertainty measures.</p>
+
+        <h3>What VCs actually respond to</h3>
+        <p>Industry-level panel analysis gave the sharper answer: lagged equity volatility within a VC's own industry significantly predicted check size changes (p &lt; 0.01), while aggregate EPU did not. In a horse race, industry volatility survived and EPU died.</p>
+
+        <h3>The pivotability framework</h3>
+        <p>One result ran opposite to Real Options Theory: VCs cut checks harder in high-tangibility industries ahead of expected volatility. My interpretation is that tangible assets proxy for a company's inability to pivot. A manufacturer is locked into its product and cost structure; a software company can reposition. VCs appear to price strategic rigidity, not financial recoverability. It also explains why technology was the one industry where check sizes carried forward-looking signal. I flag honestly in the paper that biotech, the ideal boundary case, dropped out of this analysis due to a data merge issue.</p>
+        <p><a class="doc" href="assets/econ66-paper.pdf">Read the full paper (PDF) &rarr;</a></p>
+      </div>
+      <dl class="facts">
+        <dt>Type</dt><dd>Original empirical research</dd>
+        <dt>Data</dt><dd>23,470 deals, 196 months, built from raw SEC Form D filings</dd>
+        <dt>Methods</dt><dd>Time-series and panel regression, Granger causality, robustness checks in Stata</dd>
+        <dt>Finding</dt><dd>No private VC foresight; industry volatility drives check sizes</dd>
+      </dl>
+    </section>
+
+    <section class="project" id="callaway">
+      <div class="body">
+        <h2>Callaway Golf: an activist case</h2>
+        <p class="muted small">Strategy final project &middot; Prof. Mark DesJardine, Tuck School of Business, May 2026 &middot; Team lead &middot; Graded 100%</p>
+        <p>The assignment: take an activist investor's seat at a public company. Two other groups analyzed the Topgolf merger from Topgolf's side. We picked Callaway on the other side of the same deal.</p>
+        <p>The thesis: Callaway should become a focused, data-informed pure-play golf company anchored on the avid golfer. That means selling the 40% Topgolf stake (no control, no synergy with hard goods, an illiquid drag on the multiple), swapping OGIO for Sun Mountain (OGIO serves action-sports customers, not golfers; Sun Mountain is the #1 US premium walking bag brand), and acquiring GolfTEC, whose 14M+ swing database and 250+ locations form a proprietary data layer that Acushnet structurally cannot replicate through its green-grass channel.</p>
+        <p>The insight that held the deck together: reversing the pattern. TravisMathew worked for Callaway because it was small, pure-play golf, customer-aligned, and operationally independent. Sun Mountain and GolfTEC fit that template. Topgolf, Jack Wolfskin, and OGIO never did.</p>
+        <blockquote>
+          "This is one of the strongest decks I've seen. The thesis is crisp and stated up front... every analytical framework the assignment asks for is not only present but deployed with genuine rigor."
+          <footer>Professor feedback on the final deck</footer>
+        </blockquote>
+        <p><a class="doc" href="assets/callaway-topgolf-deck.pdf">View the full presentation (PDF) &rarr;</a></p>
+      </div>
+      <dl class="facts">
+        <dt>Role</dt><dd>Team lead, 5-person team</dd>
+        <dt>Grade</dt><dd>100%</dd>
+        <dt>Capital flow</dt><dd>~$880M&ndash;$1.08B in divestitures and cash funding $350&ndash;650M of acquisitions</dd>
+        <dt>Frameworks</dt><dd>Porter's Five Forces, VRIO, GE-McKinsey, Better-Off and Three Tests, PESTEL, activity systems</dd>
+      </dl>
+    </section>
+
+    <section class="project" id="ghc-research">
+      <div class="body">
+        <h2>GHC Partners: quarterly market research</h2>
+        <p class="muted small">Live work product for a venture fund &middot; macro research included twice in LP reports</p>
+        <p>I produce quarterly VC market overviews for GHC's managing partner, synthesizing data from Bain, PitchBook, Renaissance, NEPC, and NVCA into a view the fund can act on. From the most recent cycle: a record $347B quarter for VC exit value where the top five exits were 86.6% of it, AI's share of US VC dollars climbing past 63%, secondaries overtaking IPOs as an exit path for the first time, and distribution yields at roughly half their decade average.</p>
+        <p>My read, as written to the partner: real tailwinds in reshoring and the AI buildout, but unstable. The market is too concentrated in AI, and like the dot-com era, only a few real winners will be left when it settles.</p>
+        <p>Separately, when the partner asked how current volatility compared with past crises, I went and calculated it rather than estimating: the 20-day realized volatility measure used in the crisis literature put current conditions at 33.9% annualized, closest to the 2008-09 regime, where small and mid buyout strategies held up better than venture. This is the kind of question I like: answerable with data if you're willing to go get the data.</p>
+        <p class="muted small">Fund correspondence and full memos are confidential. Summaries here are limited to my own analysis of public data.</p>
+      </div>
+      <dl class="facts">
+        <dt>Audience</dt><dd>Managing partner and LPs</dd>
+        <dt>Cadence</dt><dd>Quarterly</dd>
+        <dt>Sources</dt><dd>Bain, PitchBook, Renaissance, NEPC, NVCA, LSEG</dd>
+        <dt>Connection</dt><dd>My Econ 66 findings directly informed the fund's read on AI concentration</dd>
+      </dl>
+    </section>
+
+    <p class="next"><a href="ai.html">Next: how AI fits into all of this &rarr;</a></p>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="foot-inner">
+    <span>Jack Cook &middot; Hanover, NH &rarr; New York, NY</span>
+    <span><a href="mailto:jack.w.cook.26@dartmouth.edu">jack.w.cook.26@dartmouth.edu</a> &middot; <a href="https://www.linkedin.com/in/jack-w-cook">LinkedIn</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

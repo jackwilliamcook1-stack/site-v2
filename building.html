@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entrepreneurship &middot; Jack Cook</title>
+<meta name="description" content="Pest OS, a company managing the full customer lifecycle for pest and wildlife operators, and LP infrastructure built for GHC Partners.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="site-inner">
+    <a class="brand" href="index.html">Jack Cook</a>
+    <nav class="main" aria-label="Main">
+      <a href="index.html">About</a>
+      <a href="building.html" aria-current="page">Building</a>
+      <a href="analysis.html">Analysis</a>
+      <a href="ai.html">Working with AI</a>
+      <a href="resume.html">Resume</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section>
+      <p class="eyebrow">Entrepreneurship</p>
+      <h1>Things I've built and run, not just pitched.</h1>
+    </section>
+
+    <!-- ===== PEST OS ===== -->
+    <section class="project" id="pestos">
+      <div class="body">
+        <div class="project-header">
+          <h2>Pest OS</h2>
+          <span class="project-badge">Live &middot; Paying customers</span>
+        </div>
+        <p class="project-tagline">The full customer lifecycle for pest &amp; wildlife operators — from the missed call to the booked job.</p>
+
+        <p>Most pest and wildlife control businesses are one or two people. They miss calls constantly while on job sites, and a missed call is a missed booking. Pest OS sits behind the operator's existing number. The owner still gets first crack at every call. If nobody answers after five rings, Pest OS picks up, triages the pest type and urgency, books the job to the operator's calendar, and emails a call summary.</p>
+
+        <figure class="feature-image">
+          <img src="assets/photos/parking-lot-pitch.jpg" alt="Jack pitching Pest OS to a pest control company in a parking lot in New Hampshire">
+          <figcaption>Pitching Pest OS in a parking lot in New Hampshire. Field sales taught me more about go-to-market than any email tooling.</figcaption>
+        </figure>
+
+        <p>My co-founder Jacob Posner (Dartmouth '27) leads the technical architecture. I lead business development, outreach, operations, and sales. We met in Rome while studying abroad and incorporated when we got back to campus. We won the Magnuson Founder Grant from Dartmouth's entrepreneurship center in spring 2026.</p>
+
+        <!-- How it works diagram -->
+        <div class="flow-diagram">
+          <h3>How a call flows through Pest OS</h3>
+          <div class="flow-steps">
+            <div class="flow-step">
+              <div class="flow-icon">1</div>
+              <div class="flow-label">Customer calls</div>
+              <div class="flow-detail">Rings operator's existing number</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <div class="flow-icon">2</div>
+              <div class="flow-label">Owner gets first crack</div>
+              <div class="flow-detail">5 rings before handoff</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <div class="flow-icon">3</div>
+              <div class="flow-label">Pest OS picks up</div>
+              <div class="flow-detail">Triages pest type &amp; urgency</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <div class="flow-icon">4</div>
+              <div class="flow-label">Job booked</div>
+              <div class="flow-detail">Calendar + email summary</div>
+            </div>
+          </div>
+        </div>
+
+        <h3>First customer, first month</h3>
+        <p>Estate Wildlife Control, a two-operator wildlife company in Canaan, NH, went live April 2, 2026.</p>
+        <div class="stats">
+          <div><span class="n">97</span><span class="l">calls answered by Pest OS</span></div>
+          <div><span class="n">6</span><span class="l">jobs booked straight to calendar</span></div>
+          <div><span class="n">~$19.2K</span><span class="l">captured pipeline</span></div>
+          <div><span class="n">$4.8K</span><span class="l">from after-hours calls the office would have missed</span></div>
+        </div>
+
+        <!-- Call breakdown visual -->
+        <div class="call-breakdown">
+          <h3>97 calls, broken down</h3>
+          <div class="bar-chart">
+            <div class="bar-row">
+              <span class="bar-label">Spam screened out</span>
+              <div class="bar-track"><div class="bar-fill" style="width:42%"></div></div>
+              <span class="bar-n">41</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Info / self-declined</span>
+              <div class="bar-track"><div class="bar-fill" style="width:25%"></div></div>
+              <span class="bar-n">24</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Queued for callback</span>
+              <div class="bar-track"><div class="bar-fill" style="width:15%"></div></div>
+              <span class="bar-n">15</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Transferred w/ intent</span>
+              <div class="bar-track"><div class="bar-fill" style="width:10%"></div></div>
+              <span class="bar-n">10</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Jobs booked</span>
+              <div class="bar-track"><div class="bar-fill booked" style="width:6%"></div></div>
+              <span class="bar-n">6</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">Mishandled</span>
+              <div class="bar-track"><div class="bar-fill miss" style="width:1%"></div></div>
+              <span class="bar-n">1</span>
+            </div>
+          </div>
+          <p class="small">One call was mishandled by the AI. We caught it, told the operator, fixed the system, and repaired the relationship. When you sell software that answers someone's phone, that accountability is the product.</p>
+        </div>
+
+        <h3>What I learned</h3>
+        <p>We built before we'd validated enough. Our first customer came through proximity, not outreach, which delayed testing whether cold acquisition converts. It mostly doesn't in this industry: roughly 1,000 cold emails generated interest but no signed customers. Field sales work better — I've pitched pest control companies in parking lots in New Hampshire, and that taught me more about go-to-market than any of the email tooling did.</p>
+
+        <p><a class="doc" href="https://www.getpestos.com">getpestos.com &rarr;</a></p>
+      </div>
+      <dl class="facts">
+        <dt>Role</dt><dd>Co-founder, CEO</dd>
+        <dt>Since</dt><dd>January 2026</dd>
+        <dt>ARR</dt><dd>$6K</dd>
+        <dt>Market</dt><dd>$13.4B U.S. industry, 16,565 firms, 81% with one or two locations</dd>
+        <dt>Pricing</dt><dd>$500 setup + $500/mo</dd>
+        <dt>Burn</dt><dd>~$140/mo. First customer covers it 3.5x</dd>
+      </dl>
+    </section>
+
+    <!-- ===== GHC PARTNERS ===== -->
+    <section class="project" id="ghc">
+      <div class="body">
+        <div class="project-header">
+          <h2>GHC Partners</h2>
+          <span class="project-badge">Venture Fund</span>
+        </div>
+        <p class="project-tagline">LP outreach infrastructure, proprietary databases, and macro research for an emerging venture fund.</p>
+
+        <p>As a venture analyst at GHC Partners, I built the fund's LP outreach infrastructure from scratch. Python scripts parsed and structured contact data from source PDFs. The Anthropic API personalized email drafts at scale. A Gmail integration delivered daily drafts to the managing partner's inbox. An Excel CRM, iterated through eight-plus versions, tracked contact status, outreach stage, and responses.</p>
+        <p>The system was designed to never auto-send. Every email required explicit partner approval before going out. The automation removed drafting time, not judgment.</p>
+
+        <!-- Outreach system diagram -->
+        <div class="flow-diagram">
+          <h3>LP outreach pipeline</h3>
+          <div class="flow-steps">
+            <div class="flow-step">
+              <div class="flow-icon">1</div>
+              <div class="flow-label">Source PDFs</div>
+              <div class="flow-detail">Parse &amp; structure contacts</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <div class="flow-icon">2</div>
+              <div class="flow-label">AI drafting</div>
+              <div class="flow-detail">Personalized via Anthropic API</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <div class="flow-icon">3</div>
+              <div class="flow-label">Partner review</div>
+              <div class="flow-detail">Human approval on every send</div>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <div class="flow-icon">4</div>
+              <div class="flow-label">CRM tracking</div>
+              <div class="flow-detail">8+ iterations of Excel CRM</div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Beyond outreach</h3>
+        <p>I built three databases tracking PRIs, emerging manager programs, and donor-advised funds, covering 100+ potential LPs across the US and Northern Europe. I assisted on the fund's SBIC application, and my macroeconomic research has been included twice in LP reports. The market research itself lives on the <a href="analysis.html">Analysis page</a>.</p>
+      </div>
+      <dl class="facts">
+        <dt>Role</dt><dd>VC Analyst</dd>
+        <dt>Since</dt><dd>May 2025</dd>
+        <dt>Scale</dt><dd>~700 LP contacts</dd>
+        <dt>Databases</dt><dd>3 proprietary (PRIs, emerging managers, DAFs)</dd>
+        <dt>Stack</dt><dd>Python, Anthropic API, Gmail MCP, Excel CRM</dd>
+        <dt>Constraint</dt><dd>Human approval on every send</dd>
+      </dl>
+    </section>
+
+    <!-- ===== EARLIER ===== -->
+    <section class="project" id="earlier">
+      <div class="body">
+        <h2>Earlier builds</h2>
+        <p><strong>Arboro</strong> (TuckLAB, spring 2025). B2C reforestation platform. I led finance and business strategy. First place in the 6 Minute Pitch, Value Proposition, and Product Development challenges; third overall out of 16 teams.</p>
+        <p><strong>The Gratefull Bed Company</strong> (2023&ndash;2025). I bought an ownership share of a small bed company specifically to learn small business management with real money on the line, and increased profitability each year I held it.</p>
+      </div>
+      <dl class="facts">
+        <dt>Pattern</dt><dd>Learn by owning the outcome</dd>
+      </dl>
+    </section>
+
+    <hr class="rule">
+
+    <!-- ===== WHAT I DO DIFFERENTLY ===== -->
+    <section class="differentiators">
+      <h2>How I work</h2>
+      <div class="diff-grid">
+        <div class="diff-card">
+          <h3>Build first, theorize second</h3>
+          <p>I'd rather have a live product with one customer than a pitch deck with ten slides. Real feedback from real users is worth more than any amount of market sizing.</p>
+        </div>
+        <div class="diff-card">
+          <h3>Own the outcome</h3>
+          <p>I bought into a bed company to learn operations. I pitched in parking lots to learn sales. I don't study things from the outside when I can learn them from the inside.</p>
+        </div>
+        <div class="diff-card">
+          <h3>Systems over heroics</h3>
+          <p>Every project I've built has a repeatable system at its core — an outreach pipeline, a call flow, a CRM. The goal is always to make the process work without me in the loop.</p>
+        </div>
+        <div class="diff-card">
+          <h3>Accountability is the product</h3>
+          <p>When our AI mishandled a call, we told the operator before they found out. When I found a legal issue in an outreach campaign, I stopped it. Trust compounds.</p>
+        </div>
+      </div>
+    </section>
+
+    <p class="next"><a href="analysis.html">Next: the analytical work &rarr;</a></p>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="foot-inner">
+    <span>Jack Cook &middot; Hanover, NH</span>
+    <span><a href="mailto:jack.w.cook.26@dartmouth.edu">jack.w.cook.26@dartmouth.edu</a> &middot; <a href="https://www.linkedin.com/in/jack-w-cook">LinkedIn</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
