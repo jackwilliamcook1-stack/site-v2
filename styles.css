@@ -201,7 +201,8 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:0}
   margin:28px 0;max-width:640px;
 }
 .feature-image img{
-  width:100%;border-radius:6px;
+  width:100%;max-height:360px;object-fit:cover;
+  border-radius:6px;
   border:1px solid var(--line);
   background:var(--paper-2);
 }
