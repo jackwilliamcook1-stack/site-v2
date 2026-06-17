@@ -369,7 +369,7 @@ footer.site{
 .foot-inner a:hover{color:var(--green-dark)}
 
 /* ---------- next-page link ---------- */
-.next{
+p.next{
   margin-top:8px;padding-top:26px;border-top:1px solid var(--line);
   font-size:.92rem;
 }
