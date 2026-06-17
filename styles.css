@@ -143,11 +143,12 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
 .slide-btn{
   background:none;border:1px solid var(--line-strong);
   width:36px;height:36px;border-radius:50%;
-  font-size:.85rem;color:var(--dim);cursor:pointer;
+  color:var(--dim);cursor:pointer;
   display:inline-flex;align-items:center;justify-content:center;
-  line-height:1;padding:0;
+  padding:0;margin:0;
   transition:border-color .15s,color .15s;
 }
+.slide-btn svg{display:block}
 .slide-btn:hover{border-color:var(--green);color:var(--green)}
 .slide-dots{display:flex;gap:8px}
 .dot{
