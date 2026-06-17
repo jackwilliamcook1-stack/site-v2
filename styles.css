@@ -142,19 +142,23 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
 }
 .slide-btn{
   background:none;border:1px solid var(--line-strong);
-  width:36px;height:36px;border-radius:50%;
+  width:36px;height:36px;min-width:36px;min-height:36px;border-radius:50%;
   color:var(--dim);cursor:pointer;
   display:inline-flex;align-items:center;justify-content:center;
   padding:0;margin:0;
+  line-height:1;font-size:0;
+  vertical-align:middle;
+  flex-shrink:0;
   transition:border-color .15s,color .15s;
 }
-.slide-btn svg{display:block}
+.slide-btn svg{display:block;flex-shrink:0}
 .slide-btn:hover{border-color:var(--green);color:var(--green)}
-.slide-dots{display:flex;gap:8px}
+.slide-dots{display:flex;gap:8px;align-items:center}
 .dot{
   width:8px;height:8px;border-radius:50%;
   background:var(--line-strong);border:none;
   cursor:pointer;padding:0;
+  line-height:0;font-size:0;
   transition:background .15s;
 }
 .dot.active{background:var(--green)}
