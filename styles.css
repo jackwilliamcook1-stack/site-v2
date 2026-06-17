@@ -58,8 +58,8 @@ nav.main a:hover{color:var(--ink);border-bottom-color:var(--line-strong)}
 nav.main a[aria-current="page"]{color:var(--green);border-bottom-color:var(--green)}
 
 /* ---------- structure ---------- */
-main{padding:clamp(48px,7vw,84px) 0 32px}
-section{margin-bottom:clamp(56px,8vw,96px)}
+main{padding:clamp(36px,5vw,56px) 0 32px}
+section{margin-bottom:clamp(32px,4vw,48px)}
 .eyebrow{
   font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
   color:var(--green);margin-bottom:14px;
@@ -84,7 +84,7 @@ p.lede{
 .muted{color:var(--dim)}
 .small{font-size:.85rem;color:var(--dim)}
 
-hr.rule{border:none;border-top:1px solid var(--line);margin:0}
+hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
 
 /* ---------- hero with headshot ---------- */
 .hero-section{
@@ -163,7 +163,7 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:0}
   display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:clamp(28px,5vw,64px);
   padding-top:34px;
 }
-.project + .project{margin-top:64px;border-top:1px solid var(--line)}
+.project + .project{margin-top:40px;border-top:1px solid var(--line)}
 .project .body{min-width:0}
 .facts{
   align-self:start;
@@ -276,7 +276,7 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:0}
 }
 
 /* ---------- differentiator cards ---------- */
-.differentiators{margin-bottom:clamp(56px,8vw,96px)}
+.differentiators{margin-bottom:clamp(32px,4vw,48px)}
 .diff-grid{
   display:grid;grid-template-columns:1fr 1fr;gap:18px;
   margin-top:8px;
