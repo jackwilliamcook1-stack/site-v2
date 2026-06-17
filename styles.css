@@ -94,8 +94,8 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
 .hero-text{min-width:0}
 .headshot-wrap{
   flex-shrink:0;
-  width:clamp(120px,16vw,180px);
-  margin-top:28px;
+  width:clamp(160px,20vw,240px);
+  margin-top:16px;
 }
 .headshot{
   width:100%;aspect-ratio:1;object-fit:cover;
