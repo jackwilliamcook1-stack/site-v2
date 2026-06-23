@@ -314,8 +314,8 @@ blockquote footer{
   font-family:var(--sans);font-size:.8rem;color:var(--dim);margin-top:10px;
 }
 blockquote.featured-quote{
-  font-size:clamp(1.15rem,1.8vw,1.35rem);line-height:1.55;
-  padding:18px 0 18px 26px;
+  font-size:clamp(1.2rem,2vw,1.45rem);line-height:1.5;
+  padding:20px 0 20px 28px;
   border-left:3px solid var(--green);
   margin:32px 0;
 }
@@ -330,12 +330,13 @@ blockquote.featured-quote strong{
   border-bottom:1px solid var(--green);
 }
 .doc-big{
-  font-size:1.3rem;
-  margin-top:16px;
-  padding:12px 24px;
+  font-size:.85rem;
+  margin:0;
+  padding:8px 18px;
   background:var(--green);color:#fff;
   border:none;border-radius:6px;
   transition:background .15s;
+  font-weight:600;letter-spacing:.02em;
 }
 .doc-big:hover{background:var(--green-dark);color:#fff;border-bottom:none}
 
