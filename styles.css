@@ -86,6 +86,15 @@ p.lede{
 
 hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
 
+/* ---------- about grid (professional + interests) ---------- */
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:clamp(28px,5vw,56px);
+  margin-bottom:clamp(32px,4vw,48px);
+}
+.about-grid section{margin-bottom:0}
+.about-grid p{max-width:none}
+
 /* ---------- hero with headshot ---------- */
 .hero-section{
   display:grid;grid-template-columns:1fr auto;gap:clamp(28px,5vw,56px);
@@ -410,6 +419,7 @@ p.next{
     display:grid;grid-template-columns:1fr 1fr;gap:0 18px;
   }
   .facts dt{margin-top:12px}
+  .about-grid{grid-template-columns:1fr}
   .diff-grid{grid-template-columns:1fr}
   .flow-steps{flex-wrap:wrap;gap:8px}
   .flow-arrow{display:none}
