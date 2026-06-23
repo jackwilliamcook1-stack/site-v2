@@ -30,47 +30,41 @@
 
     <section>
       <p class="eyebrow">Working with AI</p>
-      <h1>AI assembles. I decide.</h1>
-      <p class="lede">Everyone's resume says "AI tools" now. Here is what that actually means in my work, at three levels: building products with it, running real workflows on it, and knowing where it breaks.</p>
+      <h1>What I've actually built with it.</h1>
+      <p class="lede">I use Claude and the Claude API daily. Here's what that looks like in practice.</p>
     </section>
 
     <section class="project">
       <div class="body">
-        <h2>1. Building products on it</h2>
-        <p>Pest OS is an AI product with paying customers, not a demo. Voice agents answer real inbound calls for real operators: 97 calls handled in our first customer's first month, six jobs booked to calendar without a human touching the phone. Building it meant learning what production AI requires that prototypes don't: spam screening, graceful escalation to a human, and owning the failure when the agent mishandles a call. Full story on the <a href="building.html">Building page</a>.</p>
+        <h2>Pest OS: a live AI product</h2>
+        <p>Pest OS uses the Claude API and Retell to answer real phone calls for pest and wildlife operators. 97 calls handled in our first customer's first month, six jobs booked without a human touching the phone. The hard part wasn't getting the AI to talk. It was building the spam screening, the escalation logic, and figuring out what to do when it gets a call wrong. Full details on the <a href="building.html">Entrepreneurship page</a>.</p>
       </div>
       <dl class="facts">
-        <dt>Stack</dt><dd>Claude API, Retell, ElevenLabs, custom agentic workflows</dd>
-        <dt>Proof</dt><dd>$6K ARR, live since January 2026</dd>
+        <dt>Tools</dt><dd>Claude API, Retell, ElevenLabs</dd>
+        <dt>Status</dt><dd>$6K ARR, live since April 2026</dd>
       </dl>
     </section>
 
     <section class="project">
       <div class="body">
-        <h2>2. Running real workflows on it</h2>
-        <p>At GHC Partners I built an outreach pipeline that parsed family office PDFs, scored fund fit, and drafted personalized emails at scale, with human approval gating every send. The design principle: automate drafting, never judgment.</p>
-        <h3>The part most people skip: verification</h3>
-        <p>Midway through one build, the personalization script was producing clean, confident, single-sentence intros. I asked a simple question: are these actually correct? They weren't. The model had been inventing investment focus areas that sounded plausible but weren't in the source documents. So I scrapped the automated focus lines and manually verified all 87 companies against their source PDFs, in batches, until every claim traced to a document. Final count: 28 companies with verifiable focus areas, 59 left deliberately blank, and a do-not-contact list flagged in the CRM.</p>
-        <p>That instinct, that fluent output is not the same as correct output, is the most useful thing I know about AI.</p>
+        <h2>GHC Partners: outreach pipeline and the hallucination I caught</h2>
+        <p>I built an outreach system for GHC Partners using the Claude API to draft personalized LP emails from parsed family office PDFs. Every email required partner approval before it went out.</p>
+        <p>Partway through the build, the drafts looked great. Clean, confident, personalized. Then I checked whether the personalization was actually correct. It wasn't. The model had been inventing investment focus areas that sounded right but weren't in the source documents. I scrapped the automated lines, went through 87 companies by hand against their source PDFs, and ended up with 28 verified focus areas, 59 left blank, and a do-not-contact list flagged in the CRM.</p>
       </div>
       <dl class="facts">
+        <dt>Tools</dt><dd>Claude API, Python, Gmail integration</dd>
         <dt>Scale</dt><dd>~700 contacts, ~300 source PDFs</dd>
-        <dt>Catch</dt><dd>Hallucinated focus areas, caught by manual audit</dd>
-        <dt>Fix</dt><dd>87 companies verified by hand against sources</dd>
+        <dt>Catch</dt><dd>Hallucinated focus areas, caught by manual review</dd>
       </dl>
     </section>
 
     <section class="project">
       <div class="body">
-        <h2>3. Knowing where it pays, and where it doesn't</h2>
-        <p>In a timed three-hour case for an enterprise AI company, I scoped agent deployments for two Fortune 500 workflows: distributor pricing exceptions at an industrial manufacturer, and SKU substitution at a food distributor. The exercise was less about AI and more about deployment judgment: sizing the revenue at risk (with assumptions stated and the data requests to replace them), mapping where the human stays in the loop, picking the wedge use case by adoption friction rather than by ceiling, and scoping a 90-day pilot with explicit "not attempted" lines like no ERP writes and no auto-approvals.</p>
-        <p>The lesson generalizes: the constraint on enterprise AI is rarely the model. It's data readiness, trust, and whether the people in the workflow want the thing to succeed.</p>
-        <h3>And in my own analysis</h3>
-        <p>Claude helped me write and debug the code that processed 23,470 SEC filings for my <a href="analysis.html">Econ 66 paper</a>, and helped draft visualizations for the <a href="analysis.html#callaway">Callaway deck</a>, which disclosed its AI usage specifically in the appendix. The filtering logic, the regressions, the strategic recommendations, and the writing voice are mine. That division of labor is the whole point.</p>
+        <h2>Research and analysis</h2>
+        <p>I used Claude Code to write and debug the Python that processed 23,470 SEC filings for my <a href="analysis.html">finance paper</a>. Claude helped draft visualizations for the <a href="analysis.html#callaway">Callaway deck</a>, which discloses AI usage in the appendix. I use Claude Code daily for building workflows, writing scripts, and working through problems faster than I could alone. The analysis, the strategy, and the writing are mine.</p>
       </div>
       <dl class="facts">
-        <dt>Format</dt><dd>3-hour timed case, enterprise AI deployment</dd>
-        <dt>Approach</dt><dd>Wedge selection by adoption friction, human-in-the-loop by design</dd>
+        <dt>Tools</dt><dd>Claude Code, Claude API, Python, Stata</dd>
         <dt>Disclosure</dt><dd>AI use disclosed specifically, every time</dd>
       </dl>
     </section>
