@@ -235,6 +235,17 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
   font-style:italic;
 }
 
+/* ---------- try-it CTA ---------- */
+.try-it{
+  margin:24px 0;padding:20px 24px;
+  background:var(--green-tint);border:1px solid var(--green);border-radius:6px;
+}
+.try-it h3{margin:0 0 6px;font-size:.92rem;color:var(--green)}
+.try-it p{font-size:.92rem;margin-bottom:0}
+.try-it a[href^="tel"]{
+  border-bottom:none;font-size:1.05rem;letter-spacing:.01em;
+}
+
 /* ---------- flow diagram ---------- */
 .flow-diagram{
   margin:32px 0;padding:24px;
