@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=12">
+<link rel="stylesheet" href="styles.css?v=13">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -32,26 +32,6 @@
     <section>
       <p class="eyebrow">Analysis</p>
       <h1>Research and strategy work, with the documents to back it up.</h1>
-    </section>
-
-    <section class="project reveal" id="econ66">
-      <div class="body">
-        <h2>How smart is smart money?</h2>
-        <p class="muted small">ECON 66: Theory of Finance, Dartmouth, March 2025</p>
-        <p>Do VCs actually have better information than the market? I built a dataset of <mark>23,470 deals</mark> from raw SEC Form D filings to find out. The short answer is no. An initial signal disappeared once I added standard macro controls. VCs read the same public information everyone else does.</p>
-        <p>The more interesting finding: VCs respond to volatility within their own industry, not the broader economy. And they cut bigger checks in industries where companies can't easily pivot, which runs opposite to what Real Options Theory would predict. The full methodology, robustness checks, and the one data issue I flag honestly are all in the paper.</p>
-        <div class="pdf-preview">
-          <iframe src="https://docs.google.com/gview?url=https://jackwilliamcook1-stack.github.io/site-v2/assets/econ66-paper.pdf&embedded=true" title="Preview: How Smart Is Smart Money?"></iframe>
-          <div class="pdf-preview-label">Scroll to read, or download below</div>
-        </div>
-        <p><a class="doc" href="assets/econ66-paper.pdf">Download the full paper (PDF) &rarr;</a></p>
-      </div>
-      <dl class="facts">
-        <dt>Type</dt><dd>Original empirical research</dd>
-        <dt>Data</dt><dd>23,470 deals, 196 months, built from raw SEC Form D filings</dd>
-        <dt>Methods</dt><dd>Time-series and panel regression, Granger causality, robustness checks in Stata</dd>
-        <dt>Finding</dt><dd>No private VC foresight; industry volatility drives check sizes</dd>
-      </dl>
     </section>
 
     <section class="project reveal" id="callaway">
@@ -87,18 +67,37 @@
       </dl>
     </section>
 
+    <section class="project reveal" id="econ66">
+      <div class="body">
+        <h2>How smart is smart money?</h2>
+        <p class="muted small">ECON 66: Theory of Finance, Dartmouth, March 2025</p>
+        <p>Do VCs actually have better information than the market? I built a dataset of 23,470 deals from raw SEC Form D filings to find out. The short answer is no. An initial signal disappeared once I added standard macro controls. VCs read the same public information everyone else does.</p>
+        <p>The more interesting finding: VCs respond to volatility within their own industry, not the broader economy. And they cut bigger checks in industries where companies can't easily pivot, which runs opposite to what Real Options Theory would predict. The full methodology, robustness checks, and the one data issue I flag honestly are all in the paper.</p>
+        <div class="pdf-preview">
+          <iframe src="https://docs.google.com/gview?url=https://jackwilliamcook1-stack.github.io/site-v2/assets/econ66-paper.pdf&embedded=true" title="Preview: How Smart Is Smart Money?"></iframe>
+          <div class="pdf-preview-label">Scroll to read, or download below</div>
+        </div>
+        <p><a class="doc" href="assets/econ66-paper.pdf">Download the full paper (PDF) &rarr;</a></p>
+      </div>
+      <dl class="facts">
+        <dt>Type</dt><dd>Original empirical research</dd>
+        <dt>Data</dt><dd>23,470 deals, 196 months, built from raw SEC Form D filings</dd>
+        <dt>Methods</dt><dd>Time-series and panel regression, Granger causality, robustness checks in Stata</dd>
+        <dt>Finding</dt><dd>No private VC foresight; industry volatility drives check sizes</dd>
+      </dl>
+    </section>
+
     <section class="project reveal" id="ghc-research">
       <div class="body">
-        <h2>GHC Partners: quarterly market research</h2>
-        <p class="muted small">Live work product for a venture fund &middot; macro research included three times in LP reports</p>
-        <p>I produce quarterly VC market overviews for GHC's managing partner using data from Bain, PitchBook, NEPC, and NVCA. My most recent read: real tailwinds in reshoring and AI, but the market is too concentrated. Like the dot-com era, only a few winners will be left when it settles.</p>
-        <p>When the partner asked how current volatility compared with past crises, I calculated it rather than guessing: 33.9% annualized on the 20-day realized volatility measure, closest to the 2008-09 regime. That's the kind of question I like. It's answerable with data if you're willing to go get the data.</p>
+        <h2>GHC Partners: market research</h2>
+        <p class="muted small">Live work product for a venture fund &middot; included three times in LP reports</p>
+        <p>I produce quarterly VC market overviews for GHC's managing partner using data from Bain, PitchBook, NEPC, and NVCA. When the partner asked how current volatility compared with past crises, I calculated it rather than guessing: 33.9% annualized on the 20-day realized volatility measure, closest to the 2008-09 regime. That's the kind of question I like — answerable with data if you're willing to go get the data.</p>
         <p class="muted small">Fund correspondence and full memos are confidential. Summaries here are limited to my own analysis of public data.</p>
       </div>
       <dl class="facts">
         <dt>Audience</dt><dd>Managing partner and LPs</dd>
         <dt>Cadence</dt><dd>Quarterly</dd>
-        <dt>Sources</dt><dd>Bain, PitchBook, Renaissance, NEPC, NVCA, LSEG</dd>
+        <dt>Sources</dt><dd>Bain, PitchBook, NEPC, NVCA, LSEG</dd>
       </dl>
     </section>
 
