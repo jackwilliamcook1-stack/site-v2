@@ -83,6 +83,14 @@ p.lede{
 }
 .muted{color:var(--dim)}
 .small{font-size:.85rem;color:var(--dim)}
+.section-sub{
+  font-family:var(--serif);font-size:.95rem;font-style:italic;
+  color:var(--dim);line-height:1.5;margin-top:-12px;margin-bottom:20px;
+}
+mark,.highlight{
+  background:var(--green-tint);color:var(--ink);
+  padding:1px 4px;border-radius:2px;
+}
 
 hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
 
