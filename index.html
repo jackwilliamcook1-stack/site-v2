@@ -8,7 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=10">
+<link rel="stylesheet" href="styles.css?v=11">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -29,40 +30,40 @@
   <div class="wrap">
 
     <section class="hero-section">
-      <div class="hero-text">
+      <div class="hero-text hero-enter">
         <p class="eyebrow">Dartmouth Economics '26</p>
         <h1>Economics Major and Entrepreneurial Problem Solver.</h1>
         <p class="lede">I graduated from Dartmouth in June 2026 with a degree in economics and a concentration in finance. I co-founded <a href="building.html#pestos">Pest OS</a>, where we manage the entire customer lifecycle for pest and wildlife control operators. As a venture analyst at <a href="building.html#ghc">GHC Partners</a>, I built the fund's LP outreach infrastructure from scratch, ran traditional investment and market analysis, built three proprietary databases covering 100+ potential LPs, and produced macroeconomic research included in LP reports three times.</p>
         <p class="muted">jack.w.cook.26@dartmouth.edu &middot; <a href="https://www.linkedin.com/in/jack-w-cook">LinkedIn</a> &middot; <a href="https://www.getpestos.com" target="_blank" rel="noopener">Pest OS</a></p>
       </div>
-      <div class="headshot-wrap">
+      <div class="headshot-wrap headshot-enter">
         <img class="headshot" src="assets/photos/headshot.jpg" alt="Jack Cook headshot">
       </div>
     </section>
 
     <hr class="rule">
 
-    <div class="about-grid">
+    <div class="about-grid stagger">
       <section>
         <h2>Professional</h2>
         <p class="section-sub">Co-Founder of Pest OS &middot; VC Analyst at GHC Partners &middot; Dartmouth Economics '26</p>
-        <p>I co-founded <a href="building.html#pestos">Pest OS</a>, where we built a system that handles missed calls, books jobs, and manages the full customer lifecycle for pest and wildlife operators. We have <strong>paying customers</strong>, won the <strong>Magnuson Founder's Grant</strong> from Dartmouth, and I've pitched companies in parking lots across New Hampshire to get there.</p>
-        <p>At <a href="building.html#ghc">GHC Partners</a>, I built the fund's LP outreach pipeline, ran investment and market analysis, constructed <strong>three proprietary databases</strong>, and produced macro research included in <strong>LP reports three times</strong>. I took a graduate-level business strategy course at <strong>Tuck Business School</strong> where I led an <a href="analysis.html#callaway">activist-investor analysis of Callaway Golf</a>, and I <a href="analysis.html#econ66">wrote a paper</a> testing whether VCs actually know more than the market.</p>
+        <p>I co-founded <a href="building.html#pestos">Pest OS</a>, where we built a system that handles missed calls, books jobs, and manages the full customer lifecycle for pest and wildlife operators. We have paying customers, won the <mark>Magnuson Founder's Grant</mark> from Dartmouth, and I've pitched companies in parking lots across New Hampshire to get there.</p>
+        <p>At <a href="building.html#ghc">GHC Partners</a>, I built the fund's LP outreach pipeline, ran investment and market analysis, constructed three proprietary databases, and produced macro research included in LP reports three times. I took a graduate-level business strategy course at <strong>Tuck Business School</strong> where I led an <a href="analysis.html#callaway">activist-investor analysis of Callaway Golf</a>, and I <a href="analysis.html#econ66">wrote a paper</a> testing whether VCs actually know more than the market.</p>
       </section>
 
       <section>
         <h2>Interests &amp; hobbies</h2>
         <p class="section-sub">Avid outdoorsman &middot; Decent shot at pool &middot; Musician</p>
-        <p>I fish, climb, and ski. I've fished across Canada, summited <strong>Mount Washington in winter</strong>, and went paragliding in Italy during study abroad. I speak Italian and lived in Rome for a term, which is where I met my Pest OS co-founder.</p>
+        <p>I fish, climb, and ski. I've fished across Canada, summited Mount Washington in winter, and went paragliding in Italy during study abroad. I speak Italian and lived in Rome for a term, which is where I met my Pest OS co-founder.</p>
         <p>I'm a lifelong skier and taught skiing at the Dartmouth Skiway. I picked up billiards at school and ended up running the Billiards Club as president. At Dartmouth, I played lead guitar and harmonica in a band called Cherry Hills. We played a lot of Greek houses.</p>
-        <p>I love to go all in on my work. That's true whether it's starting a company, a climb, or a new song. <strong>I always give my hundred percent.</strong></p>
+        <p>I love to go all in on my work. That's true whether it's starting a company, a climb, or a new song. <mark>I always give my hundred percent.</mark></p>
       </section>
     </div>
 
     <hr class="rule">
 
     <section>
-      <div class="slideshow" aria-label="Photo slideshow">
+      <div class="slideshow reveal" aria-label="Photo slideshow">
         <div class="slideshow-track">
           <figure class="slide active">
             <img src="assets/photos/fishing.jpg" alt="Jack fishing in Canada">
@@ -101,6 +102,7 @@
   </div>
 </footer>
 
+<script src="main.js"></script>
 <script>
 (function(){
   var track = document.querySelector('.slideshow-track');

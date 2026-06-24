@@ -8,7 +8,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=10">
+<link rel="stylesheet" href="styles.css?v=11">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 
@@ -34,7 +35,7 @@
     </section>
 
     <!-- ===== PEST OS ===== -->
-    <section class="project" id="pestos">
+    <section class="project reveal" id="pestos">
       <div class="body">
         <div class="project-header">
           <h2>Pest OS</h2>
@@ -52,12 +53,12 @@
 
         <p>My co-founder Jacob Posner (Dartmouth '27) leads the technical architecture. I lead business development, outreach, operations, and sales. We met in Rome while studying abroad and incorporated when we got back to campus.</p>
 
-        <p><strong>In spring 2026, we won the Magnuson Founder's Grant from Dartmouth's Center for Entrepreneurship</strong> — a competitive grant awarded to student ventures demonstrating real traction and a credible path to scale. The grant funds our next phase of customer acquisition and product development.</p>
+        <p>In spring 2026, we won the <mark>Magnuson Founder's Grant</mark> from Dartmouth's Center for Entrepreneurship — a competitive grant awarded to student ventures demonstrating real traction and a credible path to scale. The grant funds our next phase of customer acquisition and product development.</p>
 
         <!-- How it works diagram -->
-        <div class="flow-diagram">
+        <div class="flow-diagram reveal">
           <h3>How a call flows through Pest OS</h3>
-          <div class="flow-steps">
+          <div class="flow-steps stagger">
             <div class="flow-step">
               <div class="flow-icon">1</div>
               <div class="flow-label">Customer calls</div>
@@ -79,14 +80,14 @@
             <div class="flow-step">
               <div class="flow-icon">4</div>
               <div class="flow-label">Job booked</div>
-              <div class="flow-detail">Calendar + email summary</div>
+              <div class="flow-detail">Routed by location &amp; job type, added to calendar</div>
             </div>
           </div>
         </div>
 
         <h3>First customer, first month</h3>
         <p>Our first customer, a two-operator wildlife company in New Hampshire, went live April 2, 2026.</p>
-        <div class="stats">
+        <div class="stats stagger">
           <div><span class="n">97</span><span class="l">calls answered by Pest OS</span></div>
           <div><span class="n">6</span><span class="l">jobs booked straight to calendar</span></div>
           <div><span class="n">~$19.2K</span><span class="l">captured pipeline</span></div>
@@ -94,7 +95,7 @@
         </div>
 
         <!-- Call breakdown visual -->
-        <div class="call-breakdown">
+        <div class="call-breakdown reveal">
           <h3>97 calls, broken down</h3>
           <div class="bar-chart">
             <div class="bar-row">
@@ -132,7 +133,7 @@
         </div>
 
         <h3>What I learned</h3>
-        <p>We built first and iterated to our customer's needs, which I think was the right call. Roughly 1,000 cold emails generated interest but no signed customers. What actually worked was <strong>getting in front of people</strong>: leaning on my Dartmouth angle to get a conversation, starting with a small project to build trust, and proving the product before asking for a bigger commitment.</p>
+        <p>We built first and iterated to our customer's needs, which I think was the right call. Roughly 1,000 cold emails generated interest but no signed customers. What actually worked was getting in front of people: leaning on my Dartmouth angle to get a conversation, starting with a small project to build trust, and proving the product before asking for a bigger commitment.</p>
         <p>The biggest thing Pest OS taught me is that I'm a go-getter. If I see a pest control truck on the road, <strong>I'll pull over and talk to the owner</strong>. I've learned not to waste time on leads that aren't going anywhere and to spend it on the ones that are.</p>
 
       </div>
@@ -147,7 +148,7 @@
     </section>
 
     <!-- ===== GHC PARTNERS ===== -->
-    <section class="project" id="ghc">
+    <section class="project reveal" id="ghc">
       <div class="body">
         <div class="project-header">
           <h2>GHC Partners</h2>
@@ -159,9 +160,9 @@
         <p>The system was designed to never auto-send. Every email required explicit partner approval before going out. The automation removed drafting time, not judgment.</p>
 
         <!-- Outreach system diagram -->
-        <div class="flow-diagram">
+        <div class="flow-diagram reveal">
           <h3>LP outreach pipeline</h3>
-          <div class="flow-steps">
+          <div class="flow-steps stagger">
             <div class="flow-step">
               <div class="flow-icon">1</div>
               <div class="flow-label">Source PDFs</div>
@@ -202,7 +203,7 @@
     </section>
 
     <!-- ===== EARLIER ===== -->
-    <section class="project" id="earlier">
+    <section class="project reveal" id="earlier">
       <div class="body">
         <h2>Earlier builds</h2>
         <p><strong>Arboro</strong> (TuckLAB, spring 2025). B2C reforestation platform. I led finance and business strategy. First place in the 6 Minute Pitch, Value Proposition, and Product Development challenges; third overall out of 16 teams.</p>
@@ -216,9 +217,9 @@
     <hr class="rule">
 
     <!-- ===== WHAT I DO DIFFERENTLY ===== -->
-    <section class="differentiators">
+    <section class="differentiators reveal">
       <h2>How I work</h2>
-      <div class="diff-grid">
+      <div class="diff-grid stagger">
         <div class="diff-card">
           <h3>Launch fast, iterate to the customer</h3>
           <p>I'd rather get something live and learn from real usage than spend months perfecting a pitch deck. Pest OS launched, got its first paying customer, and we've been iterating to their needs ever since.</p>
@@ -250,5 +251,6 @@
   </div>
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
