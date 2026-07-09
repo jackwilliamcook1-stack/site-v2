@@ -214,6 +214,15 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
   margin-bottom:8px;
 }
 .project-header h2{margin-bottom:0}
+.project-logo{height:44px;width:auto}
+
+/* ---------- case study head ---------- */
+.case-head{
+  display:flex;align-items:center;gap:14px;
+  margin-top:28px;
+}
+.case-head h3{margin:0}
+.case-logo{height:60px;width:auto}
 .project-badge{
   display:inline-block;
   font-size:.68rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
