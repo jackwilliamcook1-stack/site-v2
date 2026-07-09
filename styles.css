@@ -11,6 +11,9 @@
   --green:#155939;
   --green-dark:#0F4129;
   --green-tint:rgba(21,89,57,.07);
+  --accent:#C4841D;
+  --accent-dark:#A66D15;
+  --accent-tint:rgba(196,132,29,.08);
   --serif:'Newsreader',Georgia,'Times New Roman',serif;
   --sans:'Public Sans',-apple-system,system-ui,sans-serif;
   --maxw:980px;
@@ -58,7 +61,11 @@ nav.main a:hover{color:var(--ink);border-bottom-color:var(--line-strong)}
 nav.main a[aria-current="page"]{color:var(--green);border-bottom-color:var(--green)}
 
 /* ---------- structure ---------- */
-main{padding:clamp(36px,5vw,56px) 0 32px}
+main{
+  padding:clamp(36px,5vw,56px) 0 32px;
+  animation:pageIn .35s ease-out both;
+}
+@keyframes pageIn{from{opacity:0}to{opacity:1}}
 section{margin-bottom:clamp(32px,4vw,48px)}
 .eyebrow{
   font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
@@ -238,9 +245,9 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
 /* ---------- try-it CTA ---------- */
 .try-it{
   margin:24px 0;padding:20px 24px;
-  background:var(--green-tint);border:1px solid var(--green);border-radius:6px;
+  background:var(--accent-tint);border:1px solid var(--accent);border-radius:6px;
 }
-.try-it h3{margin:0 0 6px;font-size:.92rem;color:var(--green)}
+.try-it h3{margin:0 0 6px;font-size:.92rem;color:var(--accent-dark)}
 .try-it p{font-size:.92rem;margin-bottom:0}
 .try-it a[href^="tel"]{
   border-bottom:none;font-size:1.05rem;letter-spacing:.01em;
@@ -299,7 +306,7 @@ hr.rule{border:none;border-top:1px solid var(--line);margin:8px 0}
 .bar-fill{
   height:100%;background:var(--green);border-radius:3px;
   min-width:4px;
-  transition:width .6s ease;
+  transition:width .8s ease-out;
 }
 .bar-fill.booked{background:#2a7d4f}
 .bar-fill.miss{background:#b5543a}
@@ -366,12 +373,12 @@ blockquote.featured-quote strong{
   font-size:.85rem;
   margin:0;
   padding:8px 18px;
-  background:var(--green);color:#fff;
+  background:var(--accent);color:#fff;
   border:none;border-radius:6px;
   transition:background .15s;
   font-weight:600;letter-spacing:.02em;
 }
-.doc-big:hover{background:var(--green-dark);color:#fff;border-bottom:none}
+.doc-big:hover{background:var(--accent-dark);color:#fff;border-bottom:none}
 
 /* ---------- stat strip ---------- */
 .stats{
