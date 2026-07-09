@@ -52,6 +52,19 @@
 
   els.forEach(function(el){ observer.observe(el); });
 
+  /* Watchdog: if the observer never fires (broken/throttled embedded
+     browsers), reveal everything rather than leave the page blank. */
+  setTimeout(function(){
+    if (!document.querySelector('.in-view')){
+      els.forEach(function(el){
+        el.classList.add('in-view');
+        el.querySelectorAll('.bar-fill[data-w]').forEach(function(bar){ bar.style.width = bar.dataset.w; });
+        el.querySelectorAll('.n[data-val]').forEach(function(n){ n.textContent = n.dataset.full; });
+        observer.unobserve(el);
+      });
+    }
+  }, 2000);
+
   /* --- Count-up animation --- */
   function countUp(el){
     var raw = el.dataset.val;
@@ -76,8 +89,12 @@
         if (hasComma) s = Number(s).toLocaleString();
       }
       el.textContent = prefix + s + suffix;
-      if (p < 1) requestAnimationFrame(tick);
-      else el.textContent = el.dataset.full;
+      if (p < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        el.textContent = el.dataset.full;
+        el.classList.add('pop');
+      }
     })(t0);
   }
 })();
