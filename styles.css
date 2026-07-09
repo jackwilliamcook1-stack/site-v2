@@ -419,15 +419,15 @@ blockquote.featured-quote strong{
 }
 .js .stats.in-view div::before{transform:scaleX(1)}
 .stats .n{
-  font-family:var(--serif);font-size:clamp(2.1rem,3.2vw,2.6rem);font-weight:600;
+  font-family:var(--serif);font-size:clamp(1.9rem,2.8vw,2.3rem);font-weight:600;
   color:var(--green);
   font-variant-numeric:tabular-nums;display:block;
   line-height:1.15;
 }
-.stats .n.pop{animation:statPop .5s cubic-bezier(.34,1.56,.64,1)}
+.stats .n.pop{animation:statPop .4s ease-out}
 @keyframes statPop{
   0%{transform:scale(1)}
-  45%{transform:scale(1.14)}
+  40%{transform:scale(1.04)}
   100%{transform:scale(1)}
 }
 .stats .l{font-size:.78rem;color:var(--dim);line-height:1.4;display:block;margin-top:2px}
