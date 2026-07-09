@@ -388,8 +388,10 @@ blockquote.featured-quote strong{
 }
 .stats div{background:var(--paper);padding:16px 18px}
 .stats .n{
-  font-family:var(--serif);font-size:1.5rem;font-weight:600;
+  font-family:var(--serif);font-size:clamp(1.8rem,2.6vw,2.2rem);font-weight:600;
+  color:var(--green);
   font-variant-numeric:tabular-nums;display:block;
+  line-height:1.2;
 }
 .stats .l{font-size:.78rem;color:var(--dim);line-height:1.4;display:block;margin-top:2px}
 
