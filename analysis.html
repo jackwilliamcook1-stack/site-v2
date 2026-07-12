@@ -60,8 +60,10 @@
       <div class="body">
         <h2>How smart is smart money?</h2>
         <p class="muted small">ECON 66: Theory of Finance, Dartmouth, March 2025</p>
-        <p>Do VCs actually have better information than the market? I built a dataset of 23,470 deals from raw SEC Form D filings to find out. The short answer is no. An initial signal disappeared once I added standard macro controls. VCs read the same public information everyone else does.</p>
-        <p>The test comes from Real Options theory. When uncertainty rises, the value of waiting rises with it, so rational investors facing irreversible commitments should cut their investment size. A VC check is exactly that kind of commitment: illiquid, long-horizon, hard to unwind, and made in the most uncertain corner of the market. If VCs truly anticipate uncertainty, average check sizes should shrink before it registers in public measures like the Economic Policy Uncertainty index. Nobody could run that test without deal-level VC data, so I built it.</p>
+        <p>Do VCs actually have better information than the market?</p>
+        <p>The idea comes from Real Options theory. When uncertainty rises, the value of waiting rises with it, so rational investors facing irreversible commitments should cut their investment size. A VC check is exactly that kind of commitment: illiquid, long-horizon, hard to unwind, and made in the most uncertain corner of the market. If VCs truly anticipate uncertainty, average check sizes should shrink before it registers in public measures like the Economic Policy Uncertainty (EPU) index.</p>
+        <p>To answer the question, I built a dataset of 23,470 deals from raw SEC Form D filings and tested how log changes in check size predicted, or were driven by, EPU and industry-specific public equity volatility across different horizons.</p>
+        <p>The answer is no. The initial bivariate signal disappeared once I added standard macro controls. VCs read the same public information everyone else does.</p>
         <p>The more interesting finding: VCs respond to volatility within their own industry, not the broader economy. And they cut bigger checks in industries where companies can't easily pivot, which runs opposite to what Real Options Theory would predict. The full methodology and robustness checks are in the paper.</p>
         <div class="pdf-preview">
           <iframe src="assets/econ66-paper.pdf#toolbar=0&navpanes=0&view=FitH" title="Preview: How Smart Is Smart Money?"></iframe>
