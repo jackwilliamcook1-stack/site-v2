@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "site",
+      "name": "portfolio",
       "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "8090", "--directory", "/Users/jackcook/Desktop/site-v2"],
+      "runtimeArgs": ["-m", "http.server", "8090", "--directory", "/Users/jackcook/Desktop/Claude/Portfolio"],
       "port": 8090
     }
   ]
